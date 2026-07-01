@@ -1,5 +1,11 @@
+import PageTransition from "../components/common/PageTransition";
+
 const Projects = () => {
-  return <div>Projects Page</div>;
+  return (
+    <div>
+      <PageTransition>Projects Page</PageTransition>
+    </div>
+  );
 };
 
 export default Projects;
