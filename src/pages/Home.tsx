@@ -1,10 +1,13 @@
 import PageTransition from "../components/common/PageTransition";
+import Hero from "../components/sections/Hero";
 
 const Home = () => {
   return (
-    <div>
-      <PageTransition>Home Page</PageTransition>
-    </div>
+    <PageTransition >
+      <div >
+        <Hero />
+      </div>
+    </PageTransition>
   );
 };
 
