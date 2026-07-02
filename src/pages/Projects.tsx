@@ -1,9 +1,12 @@
 import PageTransition from "../components/common/PageTransition";
+import FeaturedProjects from "../components/sections/Featuredprojects";
 
 const Projects = () => {
   return (
     <div>
-      <PageTransition>Projects Page</PageTransition>
+      <PageTransition>
+        <FeaturedProjects/>
+      </PageTransition>
     </div>
   );
 };

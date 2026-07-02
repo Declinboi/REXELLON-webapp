@@ -7,7 +7,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="mt-32 border-t border-slate-200 bg-slate-950 text-white">
+    <footer className="mt-32 border-t border-slate-200 bg-slate-950 text-white flex justify-center">
       <Container>
         <div className="grid gap-12 py-20 md:grid-cols-4">
           {/* Brand */}

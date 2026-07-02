@@ -20,7 +20,7 @@ const STATS = [
 
 const Stats = () => {
   return (
-    <section className="relative border-y border-white/5 bg-[#0F172A] py-16">
+    <section className="relative border-y border-white/5 bg-[#0F172A] py-16 flex justify-center">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(6,182,212,0.08),transparent_60%)]" />
 
       <Container>

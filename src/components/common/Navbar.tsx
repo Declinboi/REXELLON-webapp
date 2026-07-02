@@ -60,7 +60,7 @@ const Navbar = () => {
       {/* Scroll Progress */}
 
       <motion.div
-        className="fixed left-0 top-0 z-[100] h-[3px] bg-cyan-500"
+        className="fixed left-0 top-0 z-[100] h-[3px] bg-cyan-500 "
         style={{
           width: `${progress}%`,
         }}
@@ -79,7 +79,7 @@ const Navbar = () => {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="fixed left-0 top-0 z-50 w-full border-b border-cyan-500/10 bg-[#0F172A] shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-2xl"
+        className="left-0 top-0 z-50 w-full border-b border-cyan-500/10 bg-[#0F172A] shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-2xl flex justify-center"
       >
         <Container>
           <div className="mx-auto flex h-20 items-center justify-between ">
