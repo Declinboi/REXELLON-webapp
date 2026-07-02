@@ -40,7 +40,7 @@ const STEPS = [
 
 const Process = () => {
   return (
-    <section id="process" className="relative bg-white py-24 lg:py-32 flex justify-center">
+    <section id="process" className="relative flex justify-center bg-white py-24 lg:py-32">
       <Container>
         <SectionTitle
           title="How we work"
@@ -52,7 +52,7 @@ const Process = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="relative mt-20 grid gap-12 lg:grid-cols-4 lg:gap-8"
+          className="relative mt-14 grid gap-10 lg:grid-cols-4 lg:gap-7"
         >
           {/* Connecting line on desktop */}
           <div className="pointer-events-none absolute left-0 right-0 top-8 hidden h-px bg-linear-to-r from-transparent via-slate-300 to-transparent lg:block" />

@@ -56,7 +56,7 @@ const SERVICES = [
  
 const Services = () => {
   return (
-    <section id="services" className="relative bg-[#F8FAFC] py-24 lg:py-32 flex justify-center">
+    <section id="services" className="relative flex justify-center bg-[#F8FAFC] py-24 lg:py-32">
       <Container>
         <SectionTitle
           title="Services built for full product lifecycles"
@@ -68,7 +68,7 @@ const Services = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {SERVICES.map((service) => {
             const Icon = service.icon;
@@ -80,7 +80,7 @@ const Services = () => {
                     <Icon size={26} />
                   </div>
  
-                  <h3 className="mt-6 text-xl font-bold text-slate-900">
+                  <h3 className="mt-5 text-xl font-bold text-slate-900">
                     {service.title}
                   </h3>
  
@@ -88,7 +88,7 @@ const Services = () => {
                     {service.description}
                   </p>
  
-                  <div className="mt-6 flex items-center gap-1 text-sm font-semibold text-blue-700 opacity-0 transition-all duration-300 group-hover:opacity-100">
+                  <div className="mt-5 flex items-center gap-1 text-sm font-semibold text-blue-700 opacity-0 transition-all duration-300 group-hover:opacity-100">
                     Learn more
                     <ArrowUpRight size={16} />
                   </div>

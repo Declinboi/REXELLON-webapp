@@ -54,14 +54,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative bg-[#F8FAFC] py-24 lg:py-32 flex justify-center ">
+    <section id="contact" className="relative flex justify-center bg-[#F8FAFC] py-24 lg:py-32">
       <Container>
         <SectionTitle
           title="Let's build something together"
           subtitle="Tell us about your project and we'll get back to you within one business day."
         />
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-5">
+        <div className="mt-14 grid gap-8 lg:grid-cols-5 lg:gap-10">
           {/* Info panel */}
           <motion.div
             variants={slideLeft}
@@ -70,7 +70,7 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.4 }}
             className="lg:col-span-2"
           >
-            <div className="rounded-3xl bg-[#0F172A] p-8 text-white shadow-2xl">
+            <div className="rounded-2xl bg-[#0F172A] p-5 text-white shadow-2xl sm:p-6 lg:p-7">
               <h3 className="text-xl font-bold">Contact information</h3>
 
               <p className="mt-3 text-sm leading-relaxed text-slate-400">
@@ -78,7 +78,7 @@ const Contact = () => {
                 within one business day.
               </p>
 
-              <div className="mt-8 space-y-6">
+              <div className="mt-7 space-y-5">
                 {CONTACT_INFO.map((item) => {
                   const Icon = item.icon;
 
@@ -111,13 +111,13 @@ const Contact = () => {
           >
             <form
               onSubmit={handleSubmit}
-              className="rounded-3xl border border-slate-200 bg-white p-8 shadow-lg sm:p-10"
+              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-lg sm:p-7 lg:p-8"
             >
               {submitted && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="mb-6 flex items-center gap-3 rounded-2xl bg-emerald-50 px-5 py-4 text-emerald-700"
+                  className="mb-5 flex items-center gap-3 rounded-xl bg-emerald-50 px-4 py-3 text-emerald-700"
                 >
                   <CheckCircle2 size={20} />
                   <p className="text-sm font-medium">
@@ -126,7 +126,7 @@ const Contact = () => {
                 </motion.div>
               )}
 
-              <div className="grid gap-6 sm:grid-cols-2">
+              <div className="grid gap-5 sm:grid-cols-2">
                 <motion.div variants={fadeInUp}>
                   <label
                     htmlFor="name"
@@ -163,7 +163,7 @@ const Contact = () => {
                 </motion.div>
               </div>
 
-              <motion.div variants={fadeInUp} className="mt-6">
+              <motion.div variants={fadeInUp} className="mt-5">
                 <label
                   htmlFor="message"
                   className="mb-2 block text-sm font-medium text-slate-700"
@@ -180,7 +180,7 @@ const Contact = () => {
                 />
               </motion.div>
 
-              <motion.div variants={fadeInUp} className="mt-8">
+              <motion.div variants={fadeInUp} className="mt-7">
                 <GlowButton type="submit" className="w-full sm:w-auto">
                   <span className="flex items-center justify-center gap-2">
                     Send message

@@ -11,7 +11,7 @@ const Input = forwardRef<
       ref={ref}
       {...props}
       className={clsx(
-        "w-full rounded-xl border border-slate-300 px-5 py-3 outline-none transition-all",
+        "w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition-all",
         "focus:border-blue-600 focus:ring-4 focus:ring-blue-200",
         className,
       )}

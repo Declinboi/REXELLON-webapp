@@ -36,13 +36,10 @@ const links = [
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
-
       const total =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
@@ -60,7 +57,7 @@ const Navbar = () => {
       {/* Scroll Progress */}
 
       <motion.div
-        className="fixed left-0 top-0 z-[100] h-[3px] bg-cyan-500 "
+        className="fixed left-0 top-0 z-[100] h-[3px] bg-cyan-500"
         style={{
           width: `${progress}%`,
         }}
@@ -79,15 +76,15 @@ const Navbar = () => {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="left-0 top-0 z-50 w-full border-b border-cyan-500/10 bg-[#0F172A] shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-2xl flex justify-center"
+        className="left-0 top-0 z-50 flex w-full justify-center border-b border-cyan-500/10 bg-[#0F172A] shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-2xl"
       >
         <Container>
-          <div className="mx-auto flex h-20 items-center justify-between ">
+          <div className="mx-auto flex h-20 items-center justify-between">
             <Logo />
 
             {/* Desktop */}
 
-            <nav className="ml-16 hidden lg:flex items-center gap-10">
+            <nav className="ml-16 hidden items-center gap-10 lg:flex">
               {links.map((link) => (
                 <NavLink
                   key={link.name}
@@ -121,9 +118,9 @@ const Navbar = () => {
 
             {/* Right */}
 
-            <div className="hidden lg:block ">
+            <div className="hidden lg:block">
               <Link to="/contact">
-                <GlowButton >Book Consultation</GlowButton>
+                <GlowButton>Book Consultation</GlowButton>
               </Link>
             </div>
 
@@ -158,7 +155,7 @@ const Navbar = () => {
               className="border-t border-slate-800 bg-[#0F172A]/95 backdrop-blur-2xl lg:hidden"
             >
               <Container>
-                <div className="flex flex-col py-8">
+                <div className="flex flex-col py-5">
                   {links.map((link) => (
                     <NavLink
                       key={link.name}
@@ -166,7 +163,7 @@ const Navbar = () => {
                       end={link.path === "/"}
                       onClick={() => setMobileMenu(false)}
                       className={({ isActive }) =>
-                        `rounded-xl px-4 py-4 transition ${
+                        `rounded-xl px-4 py-3 transition ${
                           isActive
                             ? "bg-cyan-500/10 text-cyan-400"
                             : "text-slate-300 hover:bg-slate-800 hover:text-cyan-400"
@@ -180,7 +177,7 @@ const Navbar = () => {
                   <Link
                     to="/contact"
                     onClick={() => setMobileMenu(false)}
-                    className="mt-6"
+                    className="mt-5"
                   >
                     <GlowButton className="w-full">
                       Book Consultation

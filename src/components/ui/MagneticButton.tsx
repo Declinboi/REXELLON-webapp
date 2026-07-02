@@ -46,7 +46,7 @@ const MagneticButton = ({ children, ...props }: Props) => {
       {...props}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
-      className="rounded-xl bg-[#1E40AF] px-7 py-4 font-semibold text-white transition-colors hover:bg-[#2563EB]"
+      className="inline-flex min-h-11 items-center justify-center whitespace-nowrap rounded-xl bg-[#1E40AF] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#2563EB] sm:px-7 sm:py-3.5"
     >
       {children}
     </button>

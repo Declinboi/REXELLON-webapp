@@ -37,7 +37,7 @@ const STACK = [
 
 const TechStack = () => {
   return (
-    <section className="relative bg-[#F8FAFC] py-24 lg:py-32 flex justify-center">
+    <section className="relative flex justify-center bg-[#F8FAFC] py-24 lg:py-32">
       <Container>
         <SectionTitle
           title="Our tech stack"
@@ -49,7 +49,7 @@ const TechStack = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-16 grid grid-cols-3 gap-6 sm:grid-cols-4 lg:grid-cols-6"
+          className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-5 lg:grid-cols-6"
         >
           {STACK.map((tech) => {
             const Icon = tech.icon;
@@ -59,7 +59,7 @@ const TechStack = () => {
                 key={tech.name}
                 variants={fadeInUp}
                 whileHover={{ y: -6 }}
-                className="group flex flex-col items-center gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg"
+                className="group flex min-h-28 flex-col items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:shadow-lg sm:p-5"
               >
                 <Icon
                   size={36}

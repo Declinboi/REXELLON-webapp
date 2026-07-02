@@ -1,5 +1,4 @@
 import PageTransition from "../components/common/PageTransition";
-import BlogPreview from "../components/sections/Blogpreview";
 import FeaturedProjects from "../components/sections/Featuredprojects";
 import Hero from "../components/sections/Hero";
 import Process from "../components/sections/Process";
@@ -10,15 +9,15 @@ import Services from "./Services";
 
 const Home = () => {
   return (
-    <PageTransition >
-      <div >
+    <PageTransition>
+      <div>
         <Hero />
         <Stats />
         <About />
         <Services />
         <FeaturedProjects />
         <Process />
-        <TechStack  />
+        <TechStack />
       </div>
     </PageTransition>
   );

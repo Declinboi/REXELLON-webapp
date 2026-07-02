@@ -25,7 +25,7 @@ const CursorFollower = () => {
 
     return () =>
       window.removeEventListener("mousemove", move);
-  }, []);
+  }, [mouseX, mouseY]);
 
   return (
     <motion.div

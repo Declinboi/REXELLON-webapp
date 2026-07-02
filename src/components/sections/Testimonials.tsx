@@ -7,7 +7,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import Container from "../ui/Container";
-import SectionTitle from "../ui/SectionTitle";
 
 import { fadeInUp } from "../../animations/fade";
 
@@ -40,7 +39,7 @@ const TESTIMONIALS = [
 
 const Testimonials = () => {
   return (
-    <section className="relative overflow-hidden bg-[#0F172A] py-24 lg:py-32 flex justify-center">
+    <section className="relative flex justify-center overflow-hidden bg-[#0F172A] py-24 lg:py-32">
       <div className="pointer-events-none absolute -left-32 top-1/2 -z-10 h-96 w-96 -translate-y-1/2 rounded-full bg-blue-600/20 blur-[130px]" />
       <div className="pointer-events-none absolute -right-32 top-1/2 -z-10 h-96 w-96 -translate-y-1/2 rounded-full bg-cyan-500/15 blur-[130px]" />
 
@@ -62,10 +61,10 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        <div className="mt-16">
+        <div className="mt-14">
           <Swiper
             modules={[Autoplay, Pagination]}
-            spaceBetween={28}
+            spaceBetween={24}
             slidesPerView={1}
             loop
             autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -78,7 +77,7 @@ const Testimonials = () => {
           >
             {TESTIMONIALS.map((testimonial) => (
               <SwiperSlide key={testimonial.name} className="h-auto pb-2">
-                <div className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl">
+                <div className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl sm:p-6">
                   <Quote className="text-cyan-400" size={28} />
 
                   <div className="mt-4 flex gap-1 text-amber-400">

@@ -33,7 +33,7 @@ const Modal = ({ isOpen, onClose, title, children }: ModalProps) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-5 backdrop-blur-md"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-md sm:p-5"
         >
           <motion.div
             initial={{
@@ -55,9 +55,9 @@ const Modal = ({ isOpen, onClose, title, children }: ModalProps) => {
               duration: 0.35,
             }}
             onClick={(e) => e.stopPropagation()}
-            className="w-full max-w-2xl rounded-3xl bg-white p-8 shadow-2xl"
+            className="w-full max-w-2xl rounded-2xl bg-white p-5 shadow-2xl sm:p-7"
           >
-            {title && <h2 className="mb-6 text-3xl font-bold">{title}</h2>}
+            {title && <h2 className="mb-5 text-2xl font-bold sm:text-3xl">{title}</h2>}
 
             {children}
           </motion.div>

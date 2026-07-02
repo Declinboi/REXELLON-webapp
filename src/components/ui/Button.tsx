@@ -21,6 +21,7 @@ const Button = ({
       className={twMerge(
         clsx(
           "rounded-xl font-semibold transition-all duration-300 active:scale-95",
+          "inline-flex min-h-10 items-center justify-center gap-2 whitespace-nowrap",
 
           {
             "bg-[#1E40AF] text-white hover:bg-[#2563EB]": variant === "primary",
@@ -31,11 +32,11 @@ const Button = ({
             "border-2 border-[#1E40AF] text-[#1E40AF] hover:bg-[#1E40AF] hover:text-white":
               variant === "outline",
 
-            "px-4 py-2 text-sm": size === "sm",
+            "px-3.5 py-2 text-sm": size === "sm",
 
-            "px-6 py-3 text-base": size === "md",
+            "px-5 py-2.5 text-sm sm:text-base": size === "md",
 
-            "px-8 py-4 text-lg": size === "lg",
+            "px-6 py-3 text-base sm:px-7 sm:py-3.5 sm:text-lg": size === "lg",
           },
         ),
         className,

@@ -32,7 +32,7 @@ const TEAM = [
 
 const Team = () => {
   return (
-    <section id="team" className="relative bg-white py-24 lg:py-32 flex justify-center">
+    <section id="team" className="relative flex justify-center bg-white py-24 lg:py-32">
       <Container>
         <SectionTitle
           title="Meet the team"
@@ -44,19 +44,19 @@ const Team = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
           {TEAM.map((member) => (
             <motion.div
               key={member.name}
               variants={fadeInUp}
-              className="group rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              className="group rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl sm:p-6"
             >
               <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-linear-to-br from-[#1E40AF] via-[#3B82F6] to-[#06B6D4] text-2xl font-bold text-white shadow-lg">
                 {member.initials}
               </div>
 
-              <h3 className="mt-6 text-lg font-bold text-slate-900">
+              <h3 className="mt-5 text-lg font-bold text-slate-900">
                 {member.name}
               </h3>
 

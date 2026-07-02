@@ -36,7 +36,7 @@ const POSTS = [
 
 const BlogPreview = () => {
   return (
-    <section id="blog" className="relative bg-white py-24 lg:py-32 flex justify-center">
+    <section id="blog" className="relative flex justify-center bg-white py-24 lg:py-32">
       <Container>
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <SectionTitle
@@ -60,19 +60,19 @@ const BlogPreview = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-16 grid gap-8 lg:grid-cols-3"
+          className="mt-14 grid gap-6 lg:grid-cols-3"
         >
           {POSTS.map((post) => (
             <motion.article
               key={post.title}
               variants={fadeInUp}
-              className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
             >
               <div
                 className={`h-44 bg-linear-to-br ${post.gradient} transition-transform duration-500 group-hover:scale-105`}
               />
 
-              <div className="p-7">
+              <div className="p-5 sm:p-6">
                 <Badge color="cyan">{post.category}</Badge>
 
                 <h3 className="mt-4 text-lg font-bold leading-snug text-slate-900">
@@ -95,7 +95,7 @@ const BlogPreview = () => {
           ))}
         </motion.div>
 
-        <div className="mt-12 flex justify-center lg:hidden">
+        <div className="mt-10 flex justify-center lg:hidden">
           <Link to="/blog">
             <Button variant="outline">
               <span className="flex items-center gap-2">

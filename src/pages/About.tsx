@@ -8,7 +8,6 @@ import SectionTitle from "../components/ui/SectionTitle";
 import { fadeInUp } from "../animations/fade";
 import { slideRight } from "../animations/slide";
 import { staggerContainer } from "../animations/stagger";
-import FeaturedProjects from "../components/sections/Featuredprojects";
 import Team from "../components/sections/Team";
 
 const POINTS = [
@@ -23,10 +22,10 @@ const About = () => {
     <div>
       <section
         id="about"
-        className="relative overflow-hidden bg-white py-24 lg:py-32 flex justify-center "
+        className="relative flex justify-center overflow-hidden bg-white py-24 lg:py-32"
       >
         <Container>
-          <div className="  grid items-center gap-16 lg:grid-cols-2">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             {/* Visual panel */}
             <motion.div
               variants={slideRight}
@@ -35,7 +34,7 @@ const About = () => {
               viewport={{ once: true, amount: 0.4 }}
               className="relative order-2 lg:order-1"
             >
-              <div className="relative rounded-3xl border border-slate-200 bg-slate-950 p-8 shadow-2xl">
+              <div className="relative rounded-2xl border border-slate-200 bg-slate-950 p-5 shadow-2xl sm:p-6 lg:p-7">
                 <div className="flex items-center gap-2 border-b border-white/10 pb-5">
                   <span className="h-3 w-3 rounded-full bg-red-400/70" />
                   <span className="h-3 w-3 rounded-full bg-yellow-400/70" />
@@ -71,13 +70,13 @@ const About = () => {
                   <p>{"};"}</p>
                 </div>
 
-                <div className="mt-8 grid grid-cols-2 gap-4">
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4">
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-3 sm:p-4">
                     <p className="text-xs text-slate-400">Founded</p>
                     <p className="mt-1 text-xl font-bold text-white">2022</p>
                   </div>
 
-                  <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-3 sm:p-4">
                     <p className="text-xs text-slate-400">Team</p>
                     <p className="mt-1 text-xl font-bold text-white">
                       Remote-first
