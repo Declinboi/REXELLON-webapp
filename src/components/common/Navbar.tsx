@@ -82,12 +82,12 @@ const Navbar = () => {
         className="fixed left-0 top-0 z-50 w-full border-b border-cyan-500/10 bg-[#0F172A] shadow-[0_10px_40px_rgba(0,0,0,.35)] backdrop-blur-2xl"
       >
         <Container>
-          <div className="flex h-20 items-center justify-between">
+          <div className="mx-auto flex h-20 items-center justify-between ">
             <Logo />
 
             {/* Desktop */}
 
-            <nav className="hidden items-center gap-10 lg:flex">
+            <nav className="ml-16 hidden lg:flex items-center gap-10">
               {links.map((link) => (
                 <NavLink
                   key={link.name}
@@ -121,7 +121,7 @@ const Navbar = () => {
 
             {/* Right */}
 
-            <div className="hidden lg:block">
+            <div className="hidden lg:block ">
               <Link to="/contact">
                 <GlowButton >Book Consultation</GlowButton>
               </Link>
