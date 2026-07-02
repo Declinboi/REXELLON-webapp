@@ -32,7 +32,7 @@ const TEAM = [
 
 const Team = () => {
   return (
-    <section id="team" className="relative flex justify-center bg-white py-24 lg:py-32">
+    <section id="team" className="relative flex min-h-[760px] items-center justify-center bg-white py-32 lg:py-44">
       <Container>
         <SectionTitle
           title="Meet the team"
@@ -44,25 +44,25 @@ const Team = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-16 grid gap-7 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4"
         >
           {TEAM.map((member) => (
             <motion.div
               key={member.name}
               variants={fadeInUp}
-              className="group rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl sm:p-6"
+              className="group flex min-h-72 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl sm:p-7"
             >
               <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-linear-to-br from-[#1E40AF] via-[#3B82F6] to-[#06B6D4] text-2xl font-bold text-white shadow-lg">
                 {member.initials}
               </div>
 
-              <h3 className="mt-5 text-lg font-bold text-slate-900">
+              <h3 className="mt-6 text-lg font-bold text-slate-900">
                 {member.name}
               </h3>
 
               <p className="mt-1 text-sm text-slate-500">{member.role}</p>
 
-              <div className="mt-5 flex items-center justify-center gap-4 text-slate-400">
+              <div className="mt-6 flex items-center justify-center gap-4 text-slate-400">
                 <a
                   href="#"
                   aria-label={`${member.name} on LinkedIn`}

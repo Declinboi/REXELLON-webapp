@@ -37,7 +37,7 @@ const STACK = [
 
 const TechStack = () => {
   return (
-    <section className="relative flex justify-center bg-[#F8FAFC] py-24 lg:py-32">
+    <section className="relative flex min-h-[720px] items-center justify-center bg-[#F8FAFC] py-32 lg:py-44">
       <Container>
         <SectionTitle
           title="Our tech stack"
@@ -49,7 +49,7 @@ const TechStack = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-5 lg:grid-cols-6"
+          className="mt-16 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-5 lg:mt-20 lg:grid-cols-6"
         >
           {STACK.map((tech) => {
             const Icon = tech.icon;

@@ -39,7 +39,7 @@ const TESTIMONIALS = [
 
 const Testimonials = () => {
   return (
-    <section className="relative flex justify-center overflow-hidden bg-[#0F172A] py-24 lg:py-32">
+    <section className="relative flex min-h-[760px] items-center justify-center overflow-hidden bg-[#0F172A] py-32 lg:py-44">
       <div className="pointer-events-none absolute -left-32 top-1/2 -z-10 h-96 w-96 -translate-y-1/2 rounded-full bg-blue-600/20 blur-[130px]" />
       <div className="pointer-events-none absolute -right-32 top-1/2 -z-10 h-96 w-96 -translate-y-1/2 rounded-full bg-cyan-500/15 blur-[130px]" />
 
@@ -61,7 +61,7 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        <div className="mt-14">
+        <div className="mt-16 lg:mt-20">
           <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={24}

@@ -36,7 +36,7 @@ const PROJECTS = [
 
 const FeaturedProjects = () => {
   return (
-    <section id="projects" className="relative flex justify-center bg-[#F8FAFC] py-24 lg:py-32">
+    <section id="projects" className="relative flex min-h-[780px] items-center justify-center bg-[#F8FAFC] py-32 lg:py-44">
       <Container>
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <SectionTitle
@@ -60,7 +60,7 @@ const FeaturedProjects = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="mt-14 grid gap-6 lg:grid-cols-3"
+          className="mt-16 grid gap-7 lg:mt-20 lg:grid-cols-3"
         >
           {PROJECTS.map((project) => (
             <motion.div

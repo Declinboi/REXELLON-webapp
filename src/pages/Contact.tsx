@@ -54,14 +54,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative flex justify-center bg-[#F8FAFC] py-24 lg:py-32">
+    <section id="contact" className="relative flex min-h-[820px] items-center justify-center bg-[#F8FAFC] py-32 lg:py-44">
       <Container>
         <SectionTitle
           title="Let's build something together"
           subtitle="Tell us about your project and we'll get back to you within one business day."
         />
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-5 lg:gap-10">
+        <div className="mt-16 grid gap-8 lg:mt-20 lg:grid-cols-5 lg:gap-10">
           {/* Info panel */}
           <motion.div
             variants={slideLeft}

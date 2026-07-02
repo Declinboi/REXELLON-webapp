@@ -22,10 +22,10 @@ const About = () => {
     <div>
       <section
         id="about"
-        className="relative flex justify-center overflow-hidden bg-white py-24 lg:py-32"
+        className="relative flex min-h-[760px] items-center justify-center overflow-hidden bg-white py-32 lg:py-44"
       >
         <Container>
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
             {/* Visual panel */}
             <motion.div
               variants={slideRight}
@@ -101,7 +101,7 @@ const About = () => {
                 <Badge color="blue">About Rexellon</Badge>
               </motion.div>
 
-              <motion.div variants={fadeInUp} className="mt-6">
+              <motion.div variants={fadeInUp} className="mt-5">
                 <SectionTitle
                   center={false}
                   title="We're the technical team behind ambitious products"
@@ -110,7 +110,7 @@ const About = () => {
 
               <motion.p
                 variants={fadeInUp}
-                className="mt-6 max-w-xl leading-relaxed text-slate-600"
+                className="mt-6 max-w-xl text-base leading-8 text-slate-600"
               >
                 Rexellon Technologies is a full-stack product studio. We work
                 directly with founders and product teams to turn ideas into

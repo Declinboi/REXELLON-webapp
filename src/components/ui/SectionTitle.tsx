@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import clsx from "clsx";
 import { fadeInUp } from "../../animations/fade";
 
 interface Props {
@@ -16,10 +17,19 @@ const SectionTitle = ({ title, subtitle, center = true }: Props) => {
       viewport={{ once: true }}
       className={center ? "text-center" : ""}
     >
-      <h2 className="text-4xl font-bold text-slate-900 lg:text-5xl">{title}</h2>
+      <h2 className="text-4xl font-bold leading-tight text-slate-900 lg:text-5xl">
+        {title}
+      </h2>
 
       {subtitle && (
-        <p className="mt-5 max-w-2xl text-slate-600 mx-auto">{subtitle}</p>
+        <p
+          className={clsx(
+            "mt-5 max-w-2xl text-base leading-relaxed text-slate-600",
+            center && "mx-auto",
+          )}
+        >
+          {subtitle}
+        </p>
       )}
     </motion.div>
   );
