@@ -2,12 +2,13 @@ import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 import { useRef } from "react";
 import gsap from "gsap";
+import { twMerge } from "tailwind-merge";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
 }
 
-const MagneticButton = ({ children, ...props }: Props) => {
+const MagneticButton = ({ children, className, ...props }: Props) => {
   const ref = useRef<HTMLButtonElement>(null);
 
   const handleMove = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -46,7 +47,10 @@ const MagneticButton = ({ children, ...props }: Props) => {
       {...props}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
-      className="inline-flex min-h-11 items-center justify-center whitespace-nowrap rounded-xl bg-[#1E40AF] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#2563EB] sm:px-7 sm:py-3.5"
+      className={twMerge(
+        "rex-button rex-button-lg inline-flex min-h-12 items-center justify-center whitespace-nowrap rounded-xl bg-[#1E40AF] px-8 py-3.5 font-semibold text-white transition-colors hover:bg-[#2563EB] sm:px-9 sm:py-4",
+        className,
+      )}
     >
       {children}
     </button>

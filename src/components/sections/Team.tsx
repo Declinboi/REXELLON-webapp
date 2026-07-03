@@ -32,9 +32,13 @@ const TEAM = [
 
 const Team = () => {
   return (
-    <section id="team" className="relative flex min-h-[760px] items-center justify-center bg-white py-32 lg:py-44">
+    <section
+      id="team"
+      className="relative flex min-h-[760px] items-center justify-center bg-white py-32 lg:py-44"
+    >
       <Container>
         <SectionTitle
+          center={false}
           title="Meet the team"
           subtitle="A small, senior team that works directly with you — no layers of account managers in between."
         />
@@ -50,7 +54,7 @@ const Team = () => {
             <motion.div
               key={member.name}
               variants={fadeInUp}
-              className="group flex min-h-72 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl sm:p-7"
+              className="group flex min-h-72 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white p-7 text-center shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl sm:p-8"
             >
               <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-linear-to-br from-[#1E40AF] via-[#3B82F6] to-[#06B6D4] text-2xl font-bold text-white shadow-lg">
                 {member.initials}

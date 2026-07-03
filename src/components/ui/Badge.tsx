@@ -13,7 +13,7 @@ const Badge = ({
   return (
     <span
       className={clsx(
-        "inline-flex items-center rounded-full px-3 py-1.5 text-xs font-semibold sm:text-sm",
+        "inline-flex w-fit items-center rounded-full px-4 py-2 text-xs font-semibold leading-none sm:px-5 sm:text-sm",
 
         {
           "bg-blue-100 text-blue-700":

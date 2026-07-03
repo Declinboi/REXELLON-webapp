@@ -15,7 +15,9 @@ const SectionTitle = ({ title, subtitle, center = true }: Props) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className={center ? "text-center" : ""}
+      className={
+        center ? "mx-auto max-w-4xl text-center " : "max-w-4xl text-left"
+      }
     >
       <h2 className="text-4xl font-bold leading-tight text-slate-900 lg:text-5xl">
         {title}

@@ -66,7 +66,7 @@ const FeaturedProjects = () => {
             <motion.div
               key={project.title}
               variants={fadeInUp}
-              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
+              className="group flex h-full min-h-[330px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
             >
               <div
                 className={`relative flex h-48 items-center justify-center bg-linear-to-br ${project.gradient}`}
@@ -83,14 +83,14 @@ const FeaturedProjects = () => {
                 </div>
               </div>
 
-              <div className="p-5 sm:p-6">
+              <div className="rex-card-body-compact flex flex-1 flex-col">
                 <Badge color="blue">{project.category}</Badge>
 
-                <h3 className="mt-4 text-xl font-bold text-slate-900">
+                <h3 className="mt-5 text-xl font-bold leading-tight text-slate-900">
                   {project.title}
                 </h3>
 
-                <p className="mt-3 leading-relaxed text-slate-600">
+                <p className="mt-3 text-base leading-7 text-slate-600">
                   {project.description}
                 </p>
               </div>

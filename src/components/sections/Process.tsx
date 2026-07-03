@@ -43,6 +43,7 @@ const Process = () => {
     <section id="process" className="relative flex min-h-[720px] items-center justify-center bg-white py-32 lg:py-44">
       <Container>
         <SectionTitle
+          center={false}
           title="How we work"
           subtitle="A straightforward process that keeps you in the loop from kickoff to launch."
         />

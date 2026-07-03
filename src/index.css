@@ -71,3 +71,59 @@ ul {
   background: #3b82f6;
   color: #fff;
 }
+
+.rex-button {
+  min-width: 11rem;
+  padding-inline: 2rem;
+}
+
+.rex-button-lg {
+  min-width: 12.5rem;
+}
+
+.rex-card-body {
+  padding: 2rem;
+  text-align: left;
+}
+
+.rex-card-body-compact {
+  padding: 1.75rem;
+  text-align: left;
+}
+
+.rex-panel {
+  padding: 2rem;
+}
+
+.rex-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rex-footer-main {
+  min-height: 18rem;
+  padding-block: 5.5rem;
+}
+
+@media (max-width: 640px) {
+  .rex-button,
+  .rex-button-lg {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .rex-card-body,
+  .rex-panel {
+    padding: 1.5rem;
+  }
+
+  .rex-card-body-compact {
+    padding: 1.25rem;
+  }
+
+  .rex-footer-main {
+    min-height: auto;
+    padding-block: 4rem;
+  }
+}

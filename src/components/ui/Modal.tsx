@@ -55,7 +55,7 @@ const Modal = ({ isOpen, onClose, title, children }: ModalProps) => {
               duration: 0.35,
             }}
             onClick={(e) => e.stopPropagation()}
-            className="w-full max-w-2xl rounded-2xl bg-white p-5 shadow-2xl sm:p-7"
+            className="w-full max-w-2xl rounded-2xl bg-white p-6 shadow-2xl sm:p-8"
           >
             {title && <h2 className="mb-5 text-2xl font-bold sm:text-3xl">{title}</h2>}
 

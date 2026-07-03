@@ -66,20 +66,20 @@ const BlogPreview = () => {
             <motion.article
               key={post.title}
               variants={fadeInUp}
-              className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
+              className="group flex h-full min-h-[310px] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
             >
               <div
                 className={`h-44 bg-linear-to-br ${post.gradient} transition-transform duration-500 group-hover:scale-105`}
               />
 
-              <div className="p-5 sm:p-6">
+              <div className="rex-card-body-compact flex flex-1 flex-col">
                 <Badge color="cyan">{post.category}</Badge>
 
-                <h3 className="mt-4 text-lg font-bold leading-snug text-slate-900">
+                <h3 className="mt-5 text-lg font-bold leading-snug text-slate-900">
                   {post.title}
                 </h3>
 
-                <div className="mt-5 flex items-center gap-4 text-xs text-slate-500">
+                <div className="mt-auto flex flex-wrap items-center gap-x-4 gap-y-2 pt-6 text-xs text-slate-500">
                   <span className="flex items-center gap-1.5">
                     <Calendar size={14} />
                     {post.date}

@@ -34,7 +34,7 @@ const About = () => {
               viewport={{ once: true, amount: 0.4 }}
               className="relative order-2 lg:order-1"
             >
-              <div className="relative rounded-2xl border border-slate-200 bg-slate-950 p-5 shadow-2xl sm:p-6 lg:p-7">
+              <div className="rex-panel relative rounded-2xl border border-slate-200 bg-slate-950 shadow-2xl">
                 <div className="flex items-center gap-2 border-b border-white/10 pb-5">
                   <span className="h-3 w-3 rounded-full bg-red-400/70" />
                   <span className="h-3 w-3 rounded-full bg-yellow-400/70" />
@@ -71,12 +71,12 @@ const About = () => {
                 </div>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4">
-                  <div className="rounded-xl border border-white/10 bg-white/5 p-3 sm:p-4">
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-5">
                     <p className="text-xs text-slate-400">Founded</p>
                     <p className="mt-1 text-xl font-bold text-white">2022</p>
                   </div>
 
-                  <div className="rounded-xl border border-white/10 bg-white/5 p-3 sm:p-4">
+                  <div className="rounded-xl border border-white/10 bg-white/5 p-5">
                     <p className="text-xs text-slate-400">Team</p>
                     <p className="mt-1 text-xl font-bold text-white">
                       Remote-first

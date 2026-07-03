@@ -12,7 +12,7 @@ const Card = ({ children, className }: CardProps) => {
     <div
       className={twMerge(
         clsx(
-          "rounded-2xl border border-slate-200 bg-white p-5 shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl sm:p-6",
+          "rounded-2xl border border-slate-200 bg-white p-6 text-left shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl sm:p-7",
           className,
         ),
       )}

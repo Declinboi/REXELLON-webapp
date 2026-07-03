@@ -57,6 +57,7 @@ const Contact = () => {
     <section id="contact" className="relative flex min-h-[820px] items-center justify-center bg-[#F8FAFC] py-32 lg:py-44">
       <Container>
         <SectionTitle
+          center={false}
           title="Let's build something together"
           subtitle="Tell us about your project and we'll get back to you within one business day."
         />
@@ -70,7 +71,7 @@ const Contact = () => {
             viewport={{ once: true, amount: 0.4 }}
             className="lg:col-span-2"
           >
-            <div className="rounded-2xl bg-[#0F172A] p-5 text-white shadow-2xl sm:p-6 lg:p-7">
+            <div className="rex-panel rounded-2xl bg-[#0F172A] text-left text-white shadow-2xl">
               <h3 className="text-xl font-bold">Contact information</h3>
 
               <p className="mt-3 text-sm leading-relaxed text-slate-400">
@@ -111,13 +112,13 @@ const Contact = () => {
           >
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-lg sm:p-7 lg:p-8"
+              className="rex-panel rounded-2xl border border-slate-200 bg-white text-left shadow-lg"
             >
               {submitted && (
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="mb-5 flex items-center gap-3 rounded-xl bg-emerald-50 px-4 py-3 text-emerald-700"
+                  className="mb-5 flex items-center gap-3 rounded-xl bg-emerald-50 px-5 py-4 text-emerald-700"
                 >
                   <CheckCircle2 size={20} />
                   <p className="text-sm font-medium">
@@ -127,10 +128,10 @@ const Contact = () => {
               )}
 
               <div className="grid gap-5 sm:grid-cols-2">
-                <motion.div variants={fadeInUp}>
+                <motion.div variants={fadeInUp} className="rex-form-field">
                   <label
                     htmlFor="name"
-                    className="mb-2 block text-sm font-medium text-slate-700"
+                    className="block text-sm font-medium text-slate-700"
                   >
                     Full name
                   </label>
@@ -144,10 +145,10 @@ const Contact = () => {
                   />
                 </motion.div>
 
-                <motion.div variants={fadeInUp}>
+                <motion.div variants={fadeInUp} className="rex-form-field">
                   <label
                     htmlFor="email"
-                    className="mb-2 block text-sm font-medium text-slate-700"
+                    className="block text-sm font-medium text-slate-700"
                   >
                     Email address
                   </label>
@@ -163,10 +164,10 @@ const Contact = () => {
                 </motion.div>
               </div>
 
-              <motion.div variants={fadeInUp} className="mt-5">
+              <motion.div variants={fadeInUp} className="rex-form-field mt-6">
                 <label
                   htmlFor="message"
-                  className="mb-2 block text-sm font-medium text-slate-700"
+                  className="block text-sm font-medium text-slate-700"
                 >
                   Project details
                 </label>

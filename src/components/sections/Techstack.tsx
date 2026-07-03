@@ -40,6 +40,7 @@ const TechStack = () => {
     <section className="relative flex min-h-[720px] items-center justify-center bg-[#F8FAFC] py-32 lg:py-44">
       <Container>
         <SectionTitle
+          center={false}
           title="Our tech stack"
           subtitle="Battle-tested tools chosen for reliability and speed, not resume-padding."
         />
@@ -59,7 +60,7 @@ const TechStack = () => {
                 key={tech.name}
                 variants={fadeInUp}
                 whileHover={{ y: -6 }}
-                className="group flex min-h-28 flex-col items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition-all duration-300 hover:shadow-lg sm:p-5"
+                className="group flex min-h-28 flex-col items-center justify-center gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:shadow-lg sm:p-6"
               >
                 <Icon
                   size={36}

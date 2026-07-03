@@ -59,6 +59,7 @@ const Services = () => {
     <section id="services" className="relative flex min-h-[880px] items-center justify-center bg-[#F8FAFC] py-32 lg:py-44">
       <Container>
         <SectionTitle
+          center={false}
           title="Services built for full product lifecycles"
           subtitle="From the first line of code to the millionth user, we cover every layer of your product."
         />
@@ -75,22 +76,24 @@ const Services = () => {
  
             return (
               <motion.div key={service.title} variants={fadeInUp}>
-                <Card className="group flex h-full min-h-60 flex-col p-6 sm:p-7">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-[#1E40AF] to-[#06B6D4] text-white shadow-lg">
-                    <Icon size={26} />
-                  </div>
- 
-                  <h3 className="mt-6 text-xl font-bold text-slate-900">
-                    {service.title}
-                  </h3>
- 
-                  <p className="mt-3 leading-relaxed text-slate-600">
-                    {service.description}
-                  </p>
- 
-                  <div className="mt-auto flex items-center gap-1 pt-6 text-sm font-semibold text-blue-700 opacity-0 transition-all duration-300 group-hover:opacity-100">
-                    Learn more
-                    <ArrowUpRight size={16} />
+                <Card className="group flex h-full min-h-56 flex-col p-0">
+                  <div className="rex-card-body flex h-full flex-col">
+                    <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-[#1E40AF] to-[#06B6D4] text-white shadow-lg shadow-blue-900/20">
+                      <Icon size={26} />
+                    </div>
+
+                    <h3 className="text-xl font-bold leading-tight text-slate-900">
+                      {service.title}
+                    </h3>
+
+                    <p className="mt-3 text-base leading-7 text-slate-600">
+                      {service.description}
+                    </p>
+
+                    <div className="mt-auto flex items-center gap-2 pt-7 text-sm font-semibold text-blue-700 transition-all duration-300 group-hover:translate-x-1">
+                      Learn more
+                      <ArrowUpRight size={16} />
+                    </div>
                   </div>
                 </Card>
               </motion.div>

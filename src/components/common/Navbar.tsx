@@ -163,7 +163,7 @@ const Navbar = () => {
                       end={link.path === "/"}
                       onClick={() => setMobileMenu(false)}
                       className={({ isActive }) =>
-                        `rounded-xl px-4 py-3 transition ${
+                        `rounded-xl px-5 py-3.5 transition ${
                           isActive
                             ? "bg-cyan-500/10 text-cyan-400"
                             : "text-slate-300 hover:bg-slate-800 hover:text-cyan-400"
